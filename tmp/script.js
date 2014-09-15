@@ -20,7 +20,7 @@
       });
     });
     $form = $('.mailinglist form');
-    return $form.submit(function(e) {
+    $form.submit(function(e) {
       var $this;
       e.preventDefault();
       $this = $(this);
@@ -34,6 +34,16 @@
           return $('input#mce-EMAIL').val('thanks');
         }
       });
+    });
+    return $.ajax({
+      url: 'data/data.json',
+      type: 'get',
+      dataType: 'json',
+      success: function(results) {
+        return $.each(results.singles, function() {
+          return $('<div class="single"> <h3>' + this.title + '</h3> <img class="cover" src="assets/img/singles/' + this.art + '"> <div class="single-links"> <a href="' + this.itunes + '"><img src="assets/img/itunes.png"></a> <a href="' + this.spotify + '"><img src="assets/img/spotify.png"></a> <a href="' + this.beats + '"><img src="assets/img/beats.png"></a> </div> </div>').appendTo('#singles');
+        });
+      }
     });
   });
 
