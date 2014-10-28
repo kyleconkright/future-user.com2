@@ -1,6 +1,20 @@
 {
 	"singles": [
 		{
+			"title":"Medication Nation",
+			"art":"medicationnation.jpg",
+			"itunes":"http://smarturl.it/fumednationit",
+			"spotify":"http://smarturl.it/fumednationsp",
+			"beats":"http://smarturl.it/fumednationbeats"
+		},
+		{
+			"title":"Supernatural",
+			"art":"supernatural.jpg",
+			"itunes":"http://smarturl.it/supernaturalit",
+			"spotify":"http://smarturl.it/supernaturalsp",
+			"beats":"http://smarturl.it/supernaturalbm"
+		},
+		{
 			"title":"Clockwork<br>(Etc! Etc! Remix)",
 			"art":"clockwork-remix.jpg",
 			"itunes":"http://smarturl.it/clockworkrmxit",
